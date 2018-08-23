@@ -15,9 +15,11 @@ y_train = 2 * x_train + np.random.randn(*x_train.shape) * 0.33
 X = tf.placeholder(tf.float32)
 Y = tf.placeholder(tf.float32)
 
+
 # Defines model as y = w*X:
 def model(X, w):
     return tf.multiply(X, w)
+
 
 # Sets up weight variable:
 w = tf.Variable(0.0, name="weights")
